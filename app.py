@@ -242,5 +242,11 @@ def report():
                     "project":"AI-Driven Honeypot for Dynamic Multistage Attack Prevention with Blockchain Forensic Method",
                     "events":events,"blocked_ips":blocks})
 
+import os
+
 if __name__ == "__main__":
-app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)), debug=False)
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 10000)),
+        debug=False
+    )
